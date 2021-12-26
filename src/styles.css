@@ -36,3 +36,50 @@
 
     min-height: 100vh;
   }
+
+  /*************
+   CARD ELEMENTS 
+   *************/
+  #cardContainer {
+    display: flex;
+    height: 168px;
+    width: 470px;
+  }
+  #cardContainer img {
+    width: 125px;
+    height: 168px;
+    margin-right: 20px;
+
+    border-radius: 7px;
+    object-fit: cover;
+  }
+  #cardText {
+    position: relative;
+  }
+  #cardText a {
+    color: var(--grey);
+    font-size: var(--tiny);
+    font-weight: 400;
+  }
+  #cardText h3 {
+    position: relative;
+    font-size: var(--med);
+    line-height: var(--LHsmall);
+    font-weight: 400;
+  }
+  /* #cardText h3::before {
+    content: url(./img/here.png);
+    position: absolute;
+    height: 10px;
+    left: 0;
+    top: 0;
+  } */
+  #cardText h4 {
+    font-size: var(--tiny);
+    font-weight: 700;
+  }
+
+  #cardText p {
+    font-size: var(--tiny);
+  }
+
