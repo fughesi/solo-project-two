@@ -1,9 +1,13 @@
 import React from "react";
+import Cards from "./components/Cards"
 
 function App() {
-  return (
-    <div className="App">
 
+  const cardEl = ""
+
+  return (
+    <div id="page">
+      <Cards />
     </div>
   );
 }
