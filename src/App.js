@@ -1,6 +1,7 @@
 import React from "react";
 import Cards from "./components/Cards"
 import data from "./API/data"
+import Navbar from "./components/Navbar"
 
 function App() {
 
@@ -13,9 +14,12 @@ function App() {
     )
 
   return (
+    <>
     <div id="page">
+      <Navbar />
       {cardEl}
     </div>
+    </>
   );
 }
 

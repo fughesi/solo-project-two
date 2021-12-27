@@ -18,7 +18,7 @@ export default [
     {
         id: 2,
         title: "Riviera",
-        location: "mexico",
+        location: "Mexico",
         googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
         startDate: "1 Aug, 2020",
         endDate: "24 Jan, 2021",
@@ -28,7 +28,7 @@ export default [
     {
         id: 3,
         title: "Opera House",
-        location: "sydney",
+        location: "Sydney",
         googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
         startDate: "2 Jul, 2011",
         endDate: "24 Jan, 2021",

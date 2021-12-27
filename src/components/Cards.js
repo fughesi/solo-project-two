@@ -3,6 +3,7 @@ import React from "react"
 export default function Cards(props) {
     console.log(props)
     return (
+        <>
         <div id="cardContainer">
             <img src={props.imageUrl} alt="" />
             <div id="cardText">
@@ -11,7 +12,11 @@ export default function Cards(props) {
                 <h4>{props.startDate} - {props.endDate}</h4>
                 <p>{props.description}</p>
             </div>
-            
+            <div>
+                
+            </div>
         </div>
+        <p id="hr"></p>
+        </>
     )
 }

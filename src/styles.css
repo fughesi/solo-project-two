@@ -25,36 +25,60 @@
   GENERAL 
   *******/
   body {
-    margin: 0;
+    margin: 15px auto ;
     box-sizing: border-box;
 
     font-family: 'Inter', sans-serif;
+    width: 550px;
   }
   #page {
     display: grid;
     grid-template: auto;
-
+    grid-template: 55px 190px 30px 190px 30px 190px 30px / 550px;
+    /* gap: 30px; */
+    grid-template-areas: 
+    "a"
+    "b ";
+    
     min-height: 100vh;
   }
-
+  
+  /******
+  NAVBAR 
+  ******/
+  #navContainer {
+    grid-area: a;
+    max-width: 100%;
+    background-color: var(--accent);
+  }
+  #navContainer h3 {
+    color: var(--lightest);
+    text-align: center;
+    font-size: var(--med);
+    font-weight: 300;
+  }
+  
   /*************
-   CARD ELEMENTS 
-   *************/
+  CARD ELEMENTS 
+  *************/
   #cardContainer {
     display: flex;
-    height: 168px;
-    width: 470px;
+    margin: 15px 0;
   }
   #cardContainer img {
     width: 125px;
     height: 168px;
     margin-right: 20px;
-
+    grid-area: b;
+    
     border-radius: 7px;
     object-fit: cover;
   }
   #cardText {
     position: relative;
+  }
+  #hr {
+    border-bottom: solid .1px var(--light); 
   }
   #cardText a {
     color: var(--grey);
@@ -78,7 +102,6 @@
     font-size: var(--tiny);
     font-weight: 700;
   }
-
   #cardText p {
     font-size: var(--tiny);
   }
